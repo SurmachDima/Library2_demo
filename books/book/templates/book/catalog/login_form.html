@@ -1,0 +1,19 @@
+{% extends 'product/shop/base.html' %}
+{% load static %}
+
+{% block title %}
+Вход
+{% endblock %}
+
+{% block nav %}
+{% endblock %}
+{% block content %}
+<form action="" method="post" class="login_form">
+    {% csrf_token %}
+    <div class="login_form_wrapper">
+        <p><input type="text" placeholder="Введите логин: " name="login"></p>
+        <p><input type="password" placeholder="Введите пароль: " name="password"></p>
+        <button class="button_enter">Ок</button>
+    </div>
+</form>
+{% endblock %}
